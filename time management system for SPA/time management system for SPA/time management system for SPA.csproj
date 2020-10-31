@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>time_management_system_for_SPA</RootNamespace>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="spa logo.png" />
+    <None Remove="spa_logo_5kY_icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SQLite.Core" Version="1.0.113.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="spa logo.png" />
+    <Resource Include="spa_logo_5kY_icon.ico" />
+  </ItemGroup>
+
+</Project>

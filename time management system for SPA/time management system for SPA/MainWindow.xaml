@@ -1,0 +1,39 @@
+﻿<Window x:Class="time_management_system_for_SPA.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:time_management_system_for_SPA"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="587" Width="800" Icon="/spa_logo_5kY_icon.ico">
+    <Grid Margin="0,0,0,42">
+        <GroupBox Header="set new date" Margin="0,0,544,75"/>
+        <Calendar x:Name="calender" HorizontalAlignment="Left" Margin="43,153,0,0" VerticalAlignment="Top" Height="206" Width="187"/>
+        <Label Content="name" HorizontalAlignment="Left" Margin="10,26,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.453,0.533"/>
+        <Label Content="id" HorizontalAlignment="Left" Margin="20,59,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="addname" HorizontalAlignment="Left" Margin="68,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="26"/>
+        <TextBox x:Name="addid" HorizontalAlignment="Left" Margin="68,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+        <TextBox x:Name="addclock" HorizontalAlignment="Left" Margin="68,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="26"/>
+        <Label Content="from" HorizontalAlignment="Left" Margin="13,99,0,0" VerticalAlignment="Top"/>
+        <Button Content="add time" HorizontalAlignment="Left" Margin="108,321,0,0" VerticalAlignment="Top" Height="34" Width="65" Click="Button_Click"/>
+        <GroupBox Header="find date" Margin="261,10,186,188"/>
+        <TextBox x:Name="findclock" HorizontalAlignment="Left" Margin="425,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" Height="27"/>
+        <Button Content="find time" HorizontalAlignment="Left" Margin="367,180,0,0" VerticalAlignment="Top" Width="111" Height="35" Click="Button_Click_1"/>
+        <Label Content="day" HorizontalAlignment="Left" Margin="322,80,0,0" VerticalAlignment="Top"/>
+        <Label Content="from" HorizontalAlignment="Left" Margin="483,81,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="findday" HorizontalAlignment="Left" Margin="275,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" Height="27"/>
+        <ListBox x:Name="listbox_show" Margin="0,367,0,-11"/>
+        <TextBox x:Name="txt_find_by_name_or_id" HorizontalAlignment="Left" Margin="322,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="216" Height="29"/>
+        <Label Content="find by name or id" HorizontalAlignment="Left" Margin="373,219,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.626,0.626"/>
+        <Button Content="find person" HorizontalAlignment="Left" Margin="348,284,0,0" VerticalAlignment="Top" Width="90" Height="28" Click="Button_Click_2"/>
+        <Button Content="delete this term" HorizontalAlignment="Left" Margin="619,26,0,0" VerticalAlignment="Top" Width="171" Height="53" Click="Button_Click_3"/>
+        <Button x:Name="show_all" Content="show all Data" HorizontalAlignment="Left" Margin="619,84,0,0" VerticalAlignment="Top" Height="45" Width="171" Click="show_all_Click"/>
+        <Button Content="clear results" HorizontalAlignment="Left" Margin="619,135,0,0" VerticalAlignment="Top" Width="171" Height="41" Click="Button_Click_4"/>
+        <TextBox x:Name="TOCLOCK" HorizontalAlignment="Left" Margin="68,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="TO" HorizontalAlignment="Left" Margin="18,126,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="to_find_txt" HorizontalAlignment="Left" Margin="363,141,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="34"/>
+        <Label Content="TO" HorizontalAlignment="Left" Margin="330,144,0,0" VerticalAlignment="Top"/>
+        <Image HorizontalAlignment="Left" Height="179" Margin="619,181,0,0" VerticalAlignment="Top" Width="176" Source="/spa logo.png"/>
+        <Button Content="delete date" HorizontalAlignment="Left" Margin="461,284,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.575,0.563" Height="28" Width="77" Click="Button_Click_5"/>
+    </Grid>
+</Window>
